@@ -1,0 +1,31 @@
+GET http://localhost:3000/tasks
+
+### 
+
+GET http://localhost:3000/tasks?count=3&sort=oldest
+
+###
+
+GET http://localhost:3000/tasks/752a5ef2-8cbd-4e49-98bd-31604a70eeed
+
+###
+
+POST http://localhost:3000/tasks
+content-type: application/json
+
+{
+  "title": "강아지 산책"
+}
+
+###
+
+PATCH http://localhost:3000/tasks/752a5ef2-8cbd-4e49-98bd-31604a70eeed
+content-type: application/json
+
+{
+  "isComplete": true
+}
+
+###
+
+DELETE http://localhost:3000/tasks/f82361d3-cc44-430e-8b15-d0e3aac0886b
